@@ -1,0 +1,50 @@
+[31m[1mAnalyzing bin-ret2win-5: Initializing Angr.[0m
+[32m[1mAnalyzing bin-ret2win-5: Simulation Active.[0m
+[32m[1mAnalyzing bin-ret2win-5: Simulation Completed.[0m
+[36m[1mExploiting bin-ret2win-5: Exploits Initiated[0m
+[35m[1m[43mExploiting bin-ret2win-5: No Exploit Landed. There Goes Our Streak.[0m
+[31m[1mAnalyzing bin-ret2win-6: Initializing Angr.[0m
+[32m[1mAnalyzing bin-ret2win-6: Simulation Active.[0m
+[32m[1mAnalyzing bin-ret2win-6: Simulation Completed.[0m
+[36m[1mExploiting bin-ret2win-6: Exploits Initiated[0m
+[35m[1m[43mExploiting bin-ret2win-6: No Exploit Landed. There Goes Our Streak.[0m
+[31m[1mAnalyzing bin-ret2win-2: Initializing Angr.[0m
+[32m[1mAnalyzing bin-ret2win-2: Simulation Active.[0m
+[32m[1mAnalyzing bin-ret2win-2: Simulation Completed.[0m
+[36m[1mExploiting bin-ret2win-2: Exploits Initiated[0m
+[35m[1m[43mExploiting bin-ret2win-2: No Exploit Landed. There Goes Our Streak.[0m
+[31m[1mAnalyzing bin-ret2win-1: Initializing Angr.[0m
+[32m[1mAnalyzing bin-ret2win-1: Simulation Active.[0m
+[32m[1mAnalyzing bin-ret2win-1: Simulation Completed.[0m
+[36m[1mExploiting bin-ret2win-1: Exploits Initiated[0m
+[35m[1m[43mExploiting bin-ret2win-1: No Exploit Landed. There Goes Our Streak.[0m
+[31m[1mAnalyzing bin-ret2win-4: Initializing Angr.[0m
+[32m[1mAnalyzing bin-ret2win-4: Simulation Active.[0m
+[32m[1mAnalyzing bin-ret2win-4: Simulation Completed.[0m
+[36m[1mExploiting bin-ret2win-4: Exploits Initiated[0m
+[35m[1m[43mExploiting bin-ret2win-4: No Exploit Landed. There Goes Our Streak.[0m
+[31m[1mAnalyzing bin-ret2win-0: Initializing Angr.[0m
+[32m[1mAnalyzing bin-ret2win-0: Simulation Active.[0m
+[32m[1mAnalyzing bin-ret2win-0: Simulation Completed.[0m
+[36m[1mExploiting bin-ret2win-0: Exploits Initiated[0m
+[35m[1m[43mExploiting bin-ret2win-0: No Exploit Landed. There Goes Our Streak.[0m
+[31m[1mAnalyzing bin-ret2win-7: Initializing Angr.[0m
+[32m[1mAnalyzing bin-ret2win-7: Simulation Active.[0m
+[32m[1mAnalyzing bin-ret2win-7: Simulation Completed.[0m
+[36m[1mExploiting bin-ret2win-7: Exploits Initiated[0m
+[35m[1m[43mExploiting bin-ret2win-7: No Exploit Landed. There Goes Our Streak.[0m
+[31m[1mAnalyzing bin-ret2win-9: Initializing Angr.[0m
+[32m[1mAnalyzing bin-ret2win-9: Simulation Active.[0m
+[32m[1mAnalyzing bin-ret2win-9: Simulation Completed.[0m
+[36m[1mExploiting bin-ret2win-9: Exploits Initiated[0m
+[35m[1m[43mExploiting bin-ret2win-9: No Exploit Landed. There Goes Our Streak.[0m
+[31m[1mAnalyzing bin-ret2win-8: Initializing Angr.[0m
+[32m[1mAnalyzing bin-ret2win-8: Simulation Active.[0m
+[32m[1mAnalyzing bin-ret2win-8: Simulation Completed.[0m
+[36m[1mExploiting bin-ret2win-8: Exploits Initiated[0m
+[35m[1m[43mExploiting bin-ret2win-8: No Exploit Landed. There Goes Our Streak.[0m
+[31m[1mAnalyzing bin-ret2win-3: Initializing Angr.[0m
+[32m[1mAnalyzing bin-ret2win-3: Simulation Active.[0m
+[32m[1mAnalyzing bin-ret2win-3: Simulation Completed.[0m
+[36m[1mExploiting bin-ret2win-3: Exploits Initiated[0m
+[35m[1m[43mExploiting bin-ret2win-3: No Exploit Landed. There Goes Our Streak.[0m
