@@ -28,9 +28,9 @@ RUN apt-get install -y -qq \
     ruby-dev \
     meson
 
-RUN pip3 install --upgrade pip
+RUN pip3 install --upgrade pip --break
 
-RUN python3 -m pip install --no-cache-dir --upgrade \
+RUN python3 -m pip install --no-cache-dir --upgrade --break\
     autopep8 \
     capstone \
     colorama \
@@ -48,7 +48,7 @@ RUN python3 -m pip install --no-cache-dir --upgrade \
     rzpipe
 
 # install angr after dependencies met
-RUN pip3 install angr angrop --upgrade
+RUN pip3 install angr angrop --upgrade --break
 
 RUN git clone https://github.com/rizinorg/rizin && \
     cd rizin && \
@@ -58,7 +58,7 @@ RUN git clone https://github.com/rizinorg/rizin && \
 
 # install angrop from source -- fixes "rop" import error 
 RUN cd /opt/ && git clone https://github.com/angr/angrop && \
-    cd angrop && pip3 install .
+    cd angrop && pip3 install . --break
 
 # install pwninit for patching bins for ctfs     
 RUN wget -O /bin/pwninit https://github.com/io12/pwninit/releases/download/3.3.0/pwninit && \
@@ -79,7 +79,7 @@ RUN apt-get full-upgrade -qq -y && apt-get clean -qq -y && apt-get autoclean -qq
 WORKDIR /
  
 # enable core dumping
-RUN ulimit -c unlimited
+# RUN ulimit -c unlimited
 
 RUN echo "flag{fake-flag}" > /flag.txt
 
