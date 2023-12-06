@@ -61,30 +61,34 @@ RUN wget -O /bin/pwninit https://github.com/io12/pwninit/releases/download/3.3.0
     chmod +x /bin/pwninit
 
 # install pwndbg
-RUN cd /opt/ && git clone https://github.com/pwndbg/pwndbg && \
-  cd pwndbg && \
-  ./setup.sh
+# RUN cd /opt/ && git clone https://github.com/pwndbg/pwndbg && \
+#   cd pwndbg && \
+#   ./setup.sh
 
 # install stuff for patching binaries with libc
 RUN apt-get update -qq -y && apt-get install -qq -y patchelf elfutils
 
 # RUN apt-get full-upgrade -qq -y && apt-get clean -qq -y && apt-get autoclean -qq -y && apt-get autoremove -qq -y
 
-RUN sed -i "s/angr\.DEFAULT_CC\[self\.project\.arch\.name\](self\.project\.arch)/angr\.default_cc(self\.project\.arch\.name,platform=self\.project\.simos\.name if self\.project\.simos is not None else None,)(self\.project\.arch)/g" /usr/local/lib/python3.10/dist-packages/angrop/chain_builder/__init__.py
+# RUN sed -i "s/angr\.DEFAULT_CC\[self\.project\.arch\.name\](self\.project\.arch)/angr\.default_cc(self\.project\.arch\.name,platform=self\.project\.simos\.name if self\.project\.simos is not None else None,)(self\.project\.arch)/g" /usr/local/lib/python3.10/dist-packages/angrop/chain_builder/__init__.py
 
 WORKDIR /
  
-# enable core dumping
+# Enable core dumping.
 RUN ulimit -c unlimited
 
 # RUN mkdir -p /usr/lib/local/lib/python3.10 && ln -s /usr/lib/llvm-14/lib/python3.10/dist-packages /usr/lib/local/lib/python3.10/dist-packages
 
 RUN echo "flag{fake-flag}" > /flag.txt
 
-# copy over libc.so.6 and ld-2.27
+# Copy over libc.so.6 and ld-2.27.
 COPY libc/libc.so.6 /opt/libc.so.6 
 COPY libc/ld-2.27.so /opt/ld-2.27.so
+
+# Space for Coredumps.
 RUN mkdir /cores
+
+# Add and compile python.
 COPY exploit.py /exploit.py
 RUN python3 -m compileall exploit.py
 
